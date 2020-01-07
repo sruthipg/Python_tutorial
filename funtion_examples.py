@@ -43,4 +43,45 @@ else:
 
 
 
+# Lambda function
+# single line function
+
+# Normal functopn
+
+def square(x):
+    return x*x
+
+sq=square(5)
+print(sq)
+
+# Lambda function
+#  cannot have multiple lines
+
+f = lambda y : y*y
+print(f(4))
+# Map with lambda
+m=[1,2,3]
+# output =4,9
+# List comprehension
+p=[x*x for x in m if x >=2]
+print(p)
+
+# Other methods
+# 1. Map map(func, seq)
+def funcc(m):
+    if m >= 2:
+        return m*m
+
+print(map(funcc,m))
+
+print(lambda x:x*x, m)
+
+s=map(lambda x: x*x,filter(lambda x:x>=2,m))
+print(s)
+
+
+
+
+
+
 
